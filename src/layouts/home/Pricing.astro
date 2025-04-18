@@ -1,0 +1,107 @@
+---
+const driverPricingItems = [
+  {
+    image: 'https://i.ibb.co/1dJM36n/Group-1000004186.png',
+    title: 'Choose the service that fits your convenience.',
+    description: 'Find the perfect option for you with just a few clicks.',
+  },
+  {
+    image: 'https://i.ibb.co/j8F7Hp3/Group-1000004187.png',
+    title: 'Many rates, many garages',
+    description: 'Choose from a wide variety of available parking spots.',
+  },
+  {
+    image: 'https://i.ibb.co/fGWLjBq/Group-1000004188.png',
+    title: 'Fast and secure payments',
+    description: 'Payment gateway verified by multiple organizations.',
+  },
+]
+
+const hostPricingItems = [
+  {
+    image: 'https://i.ibb.co/Thp27TY/Group-1000004185.png',
+    title: 'Set the rate for your parking spot',
+    description: 'Customize your pricing and manage your space effortlessly.',
+  },
+  {
+    image: 'https://i.ibb.co/6gz9YtF/Group-1000004184.png',
+    title: 'Daily earnings',
+    description: 'Generate daily passive and/or active income with our app.',
+  },
+  {
+    image: 'https://i.ibb.co/nBrsbj8/Group-1000004183.png',
+    title: 'Instant payment transfers',
+    description: 'Direct communication with financial institutions.',
+  },
+]
+---
+
+<section class="py-20 bg-white max-lg:py-14 px-4 max-md:py-8" id="pricing">
+  <div class="max-w-5xl mx-auto max-lg:container">
+    <h2
+      class="text-5xl rubik font-bold text-[#55AA87] mb-10 max-lg:text-4xl text-center max-md:text-start max-md:text-2xl max-md:mb-6"
+    >
+      Pricing
+    </h2>
+
+    <div class="max-w-5xl mx-auto flex gap-20 max-md:flex-col max-md:gap-16">
+      <div class="w-full flex flex-col">
+        <h3
+          class="text-2xl font-bold rubik text-[#55AA87] mb-6 max-lg:text-xl max-md:text-lg"
+        >
+          Drivers
+        </h3>
+        <ul class="space-y-10 max-md:space-y-5">
+          {
+            driverPricingItems.map((item) => (
+              <li class="flex items-center">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  class="w-[72px] h-[72px] mr-6 max-lg:w-16 max-lg:h-16"
+                />
+                <div>
+                  <h4 class="text-lg font-bold text-[#525252] max-lg:text-base max-md:text-sm max-md:leading-snug">
+                    {item.title}
+                  </h4>
+                  <p class="text-[#525252] max-lg:text-sm max-md:text-xs max-md:leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="w-full flex flex-col">
+        <h3
+          class="text-2xl font-extrabold text-[#55AA87] mb-6 max-lg:text-xl max-md:text-lg"
+        >
+          Hosts
+        </h3>
+        <ul class="space-y-10 max-md:space-y-5">
+          {
+            hostPricingItems.map((item) => (
+              <li class="flex items-center">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  class="w-[72px] h-[72px] mr-6 max-lg:w-16 max-lg:h-16"
+                />
+                <div>
+                  <h4 class="text-lg font-bold text-[#525252] max-lg:text-base max-md:text-sm max-md:leading-snug">
+                    {item.title}
+                  </h4>
+                  <p class="text-[#525252] max-lg:text-sm max-md:text-xs max-md:leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

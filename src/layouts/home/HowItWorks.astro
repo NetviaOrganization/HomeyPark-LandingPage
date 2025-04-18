@@ -1,0 +1,71 @@
+---
+const stepList = [
+  {
+    title: 'Search in your area',
+    description:
+      'Start by searching in your area. HomeyPark uses your location to show available parking spots nearby, making it easy to find the most convenient options.',
+    image: 'https://i.ibb.co/YNWJSXV/Device-frame.png',
+  },
+  {
+    title: 'Choose a parking spot',
+    description:
+      'Select your parking spot easily. After searching in your area, HomeyPark will present you with available options. Choose the one that fits your needs and preferences, and secure it with just a few taps.',
+    image: 'https://i.ibb.co/p3LRbp7/Device-frame-1.png',
+  },
+  {
+    title: 'Reserve your parking spot',
+    description:
+      "Reserve your parking spot with ease. Once you've selected your preferred location, confirm your reservation in just a few clicks. HomeyPark ensures that your chosen spot is secured and ready for you when you arrive.",
+    image: 'https://i.ibb.co/KKtzY9B/Device-frame-2.png',
+  },
+]
+---
+
+<section class="py-20 max-lg:py-14 px-4 max-md:py-8" id="howItWorks">
+  <div class="max-lg:container mx-auto">
+    <h2
+      class="text-5xl font-bold mb-16 text-[#55AA87] rubik max-lg:mb-12 max-lg:text-4xl max-md:text-2xl text-center max-md:text-start max-md:mb-6"
+    >
+      How it works?
+    </h2>
+
+    <div class="max-w-6xl mx-auto space-y-16 max-md:space-y-8">
+      {
+        stepList.map((step, i) => (
+          <div
+            class:list={[
+              'flex flex-row max-lg:items-center max-md:flex-col',
+              { 'flex-row-reverse': i % 2 },
+            ]}
+          >
+            <div class="w-full mt-10 max-lg:mt-0 max-md:mb-4">
+              <span class="text-[40px] rubik leading-none block font-bold text-[#A7E5BD] mb-1 max-lg:text-3xl max-lg:leading-none max-md:text-lg max-md:leading-none max-md:mb-0">
+                {(i + 1).toString().padStart(2, '0')}
+              </span>
+              <h3 class="text-[40px] leading-none rubik font-bold text-[#55AA87] mb-4 max-lg:text-3xl max-lg:mb-0 max-md:text-lg">
+                {step.title}
+              </h3>
+              <p class="text-black max-lg:text-sm max-md:text-xs max-md:leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+
+            <div class="w-full">
+              <img
+                src={step.image}
+                alt={step.title}
+                class:list={[
+                  'mx-auto w-[296px] h-[414.77px] max-lg:w-1/2 max-lg:h-auto',
+                  {
+                    'ml-16 max-lg:ml-auto': i % 2,
+                    'mr-16 max-lg:mr-auto': !(i % 2),
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
