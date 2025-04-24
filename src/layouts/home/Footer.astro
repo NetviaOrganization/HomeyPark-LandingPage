@@ -33,6 +33,8 @@ const footerLinks = [
     ],
   },
 ]
+
+const year = new Date().getFullYear()
 ---
 
 <footer class="bg-white py-12 px-4 max-md:py-6">
@@ -44,7 +46,7 @@ const footerLinks = [
         class="w-[166px] h-[60px] mb-4 max-lg:w-32 max-lg:h-auto"
       />
       <p class="text-gray-600 max-lg:text-xs">
-        &copy; Copyright © 2024 by HomeyPark, Inc. <br />
+        &copy; Copyright © {year} by HomeyPark, Inc. <br />
         All rights reserved
       </p>
     </div>

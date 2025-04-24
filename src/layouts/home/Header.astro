@@ -9,6 +9,8 @@ const navLinks = [
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Pricing', href: '#pricing' },
 ]
+
+const appWebLink = 'https://homey-park-experiments-app.web.app'
 ---
 
 <header class="max-lg:!h-16 fixed top-0 left-0 right-0 w-full bg-white z-40">
@@ -32,8 +34,14 @@ const navLinks = [
       </ul>
     </div>
     <div class="max-lg:hidden">
-      <Button type="secondary">Sign in</Button>
-      <Button type="primary">Sign up</Button>
+
+      <a href={`${appWebLink}/login`}>
+        <Button type="secondary">Login</Button>
+      </a>
+
+      <a href={`${appWebLink}/signup`}>
+        <Button type="primary">Sign up</Button>
+      </a>
     </div>
     <NavSidebar client:only navLinks={navLinks} />
   </nav>
