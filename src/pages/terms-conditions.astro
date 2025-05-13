@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Footer from '../layouts/home/Footer.astro'
+---
+<Layout title="Términos y Condiciones">
+  <main class="max-w-3xl mx-auto py-12 px-4 text-gray-800">
+    <h1 class="text-3xl font-bold mb-6 text-center text-primary-700">Términos y Condiciones</h1>
+    <section class="space-y-6 bg-white rounded-lg shadow-md p-8">
+      <p class="text-justify">
+        El presente Acuerdo de Servicio (en adelante, el <strong>“Acuerdo”</strong>) regula los términos y condiciones aplicables al uso de la plataforma HomeyPark, un servicio de software como servicio (SaaS) ofrecido por Netvia. Al acceder y utilizar los servicios provistos en la plataforma web y móvil de HomeyPark, el usuario acepta quedar legalmente vinculado por los términos de este Acuerdo.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">1. Alcance del Servicio</h2>
+      <p class="text-justify">
+        HomeyPark es una solución SaaS que permite a conductores (en adelante, <strong>“Usuarios de Parking”</strong>) buscar, reservar y pagar por espacios de estacionamiento ofrecidos por terceros (en adelante, <strong>“Anfitriones”</strong>) a través de una interfaz digital. Asimismo, permite a los Anfitriones registrar y gestionar la disponibilidad de sus cocheras privadas.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">2. Derechos y Obligaciones del Usuario</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify">
+        <li>Los usuarios se comprometen a hacer uso del sistema de manera diligente, lícita y conforme a los fines para los cuales fue diseñado.</li>
+        <li>El usuario garantiza que la información proporcionada durante el registro y uso del servicio es veraz, completa y actualizada.</li>
+        <li>Los usuarios deberán respetar las condiciones específicas de uso y las normas internas establecidas por los Anfitriones respecto a sus cocheras.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">3. Responsabilidades del Proveedor (Netvia)</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify">
+        <li>Netvia se compromete a mantener la disponibilidad del servicio, salvo casos de mantenimiento programado, fuerza mayor o fallas técnicas imprevistas.</li>
+        <li>El proveedor no garantiza la disponibilidad de estacionamientos ni se responsabiliza por pérdidas, daños o robos ocurridos en el uso físico de los espacios.</li>
+        <li>Se brindará soporte técnico razonable mediante canales digitales para incidencias con el uso de la plataforma.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">4. Seguridad y Protección de Datos</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify">
+        <li>Toda la información personal será tratada conforme a las normas vigentes en materia de protección de datos personales en el Perú.</li>
+        <li>HomeyPark implementa mecanismos de autenticación, encriptación y validación de usuarios para preservar la integridad del sistema y de sus usuarios.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">5. Limitación de Responsabilidad</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify">
+        <li>HomeyPark actúa como un intermediario entre usuarios y anfitriones, por lo que no se hace responsable por el cumplimiento de los acuerdos entre ellos.</li>
+        <li>El uso del servicio se realiza bajo riesgo propio del usuario. HomeyPark no asume responsabilidad por daños indirectos, incidentales o consecuentes.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">6. Modificaciones al Servicio</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify">
+        <li>Netvia se reserva el derecho de actualizar, modificar o suspender funcionalidades de HomeyPark previa notificación a los usuarios a través de los canales registrados.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">7. Terminación</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify">
+        <li>Cualquiera de las partes podrá dar por terminado el uso del servicio en cualquier momento. La terminación no exime del cumplimiento de obligaciones previamente contraídas.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2 text-primary-600">8. Legislación Aplicable</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify">
+        <li>Este Acuerdo se regirá por las leyes de la República del Perú. Ante cualquier controversia, las partes se someten a la jurisdicción de los tribunales del distrito judicial de Lima Metropolitana.</li>
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .text-primary-700 { color: rgb(85, 170, 135); }
+  .text-primary-600 { color: rgb(85, 170, 135); }
+  .text-justify { text-align: justify; }
+</style>
